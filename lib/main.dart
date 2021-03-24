@@ -17,23 +17,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Vamos Cozinhar',
       theme: ThemeData(
-          primarySwatch: Colors.pink,
-          accentColor: Colors.amber,
-          fontFamily: 'Raleway',
-          canvasColor: Color.fromRGBO(255, 254, 229, 1),
-          textTheme: ThemeData.light().textTheme.copyWith(
-                headline6: TextStyle(
-                  fontSize: 20,
-                  fontFamily: 'RobotoCondensed',
-                ),
-              )),
+        primarySwatch: Colors.pink,
+        accentColor: Colors.amber,
+        fontFamily: 'Raleway',
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        textTheme: ThemeData.light().textTheme.copyWith(
+              headline6: TextStyle(
+                fontSize: 20,
+                fontFamily: 'RobotoCondensed',
+              ),
+            ),
+      ),
       routes: {
         AppRoutes.HOME: (ctx) => CategoriesScreen(),
         AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
         AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
       },
 
-      //Métodos para crianção de rotas dinamicas e tratamento de rotas
+      //Métodos para criação de rotas dinamicas e tratamento de rotas
       //caso não ache a que foi destinada a encontrar.
       //Ordem: routes > onGenerateRoute > onUnknownRoute
 
