@@ -49,7 +49,7 @@ class Meal {
         return 'Simples';
 
       case Complexity.Medium:
-        return 'Medio';
+        return 'Médio';
 
       case Complexity.Difficult:
         return 'Dificil';
